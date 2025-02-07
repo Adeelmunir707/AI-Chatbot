@@ -27,9 +27,9 @@ def chatbot_response(user_prompt):
         return "⚠️ Sorry, I can't generate a response due to content restrictions."
 
 # Streamlit Interface
-st.set_page_config(page_title="NeuraSeek", page_icon="🤖", layout="centered")
+st.set_page_config(page_title="NeuroSeek", page_icon="🤖", layout="centered")
 
-st.title("✨NeuraSeek - Your Assistant✨")
+st.title("✨NeuroSeek - Your Assistant✨")
 st.write("Powered by Google Generative AI")
 
 # Initialize chat history in session state
