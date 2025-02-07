@@ -166,5 +166,4 @@ SudachiDict-core==20241021
 SudachiPy==0.6.9
 sympy==1.13.1
 toml==0.10.2
-tornado==6.4.2
 yarl==1.18.3
