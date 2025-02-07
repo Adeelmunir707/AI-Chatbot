@@ -1,5 +1,3 @@
-from dotenv import load_dotenv
-import os
 import google.generativeai as genai
 from warnings import filterwarnings
 import streamlit as st
@@ -7,14 +5,13 @@ import streamlit as st
 # Ignore warnings
 filterwarnings("ignore")
 
-# Load environment variables
-load_dotenv()
-
-# Fetch API key
-api_key = os.getenv("google_api_akey")
+# Load the Google API key from Streamlit secrets
+API_KEY = st.secrets.get("google_api_key")
+if not GOOGLE_API_KEY:
+    raise ValueError("Gemini API key not found. Please check your .env file.")
 
 # Configure Google Generative AI
-genai.configure(api_key=api_key)
+genai.configure(api_key=API_KEY)
 
 # Initialize Gemini model
 model = genai.GenerativeModel('gemini-1.5-flash')
