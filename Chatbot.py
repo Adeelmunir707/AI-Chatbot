@@ -6,8 +6,8 @@ import streamlit as st
 filterwarnings("ignore")
 
 # Load the Google API key from Streamlit secrets
-google_api_key = st.secrets.get("google_api_key")
-if not google_api_key:
+API_KEY = st.secrets.get("google_api_key")
+if not API_KEY:
     raise ValueError("Gemini API key not found. Please check your .env file.")
 
 # Configure Google Generative AI
