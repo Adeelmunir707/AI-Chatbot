@@ -6,7 +6,7 @@ import streamlit as st
 filterwarnings("ignore")
 
 # Load the Google API key from Streamlit secrets
-API_KEY = st.secrets.get("google_api_key")
+google_api_key = st.secrets.get("google_api_key")
 if not google_api_key:
     raise ValueError("Gemini API key not found. Please check your .env file.")
 
