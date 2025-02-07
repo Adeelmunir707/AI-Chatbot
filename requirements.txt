@@ -107,9 +107,6 @@ namex==0.0.8
 narwhals==1.19.1
 networkx==2.8.8
 nltk==3.9.1
-num2words==0.5.14
-numba==0.60.0
-numpy==2.2.1
 openai==1.58.1
 opt_einsum==3.4.0
 optree==0.13.1
