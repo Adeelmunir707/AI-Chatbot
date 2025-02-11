@@ -81,7 +81,7 @@ with st.form(key="chat_form", clear_on_submit=True):
     if submit_button:
         if user_input:
             response = chatbot_response(user_input)
-            st.write(f"**User:** {User_input}")
+            st.write(f"**User:** {user_input}")
             st.write(f"**Neuron:** {response}")  
             st.session_state.history.append((user_input, response))  # Save history
         else:
